@@ -29,10 +29,4 @@ BEGIN
     INTO @actorId
 END   
 CLOSE accountCursor;  
-DEALLOCATE accountCursor; 
-
-DELETE FROM Account.Accounts
-SELECT * FROM Account.Accounts
-
-
-SELECT * FROM Enterprise.Lookups WHERE LookupTypeId = 4--7033
+DEALLOCATE accountCursor;
