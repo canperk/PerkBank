@@ -11,3 +11,20 @@ Northwind, AdventureWorks, Pubs gibi veritabanlarına alternatif; eğitim amaçl
   4. .bak uzantılı haliyle beraber .sql uzantılı hali de repository içerisinde olacaktır.
   5. İçerik MS-SQL Server'a göre oluşturulmuştur. Diğer veritabanlarına göre de ilerleyen zamanlarda talebe göre düzenlenebilir
      - 5.1 Farkıl versiyonlamalar için desteklere kapımız kapalı değildir :)
+
+
+# Tablolar ve Kullanım Amaçları
+  1. Enterprise.LookupTypes : Veritabanında tanımlı -daha çok seçim yapılabilecek veriler- verilerin üst kategorisi anlamında kullanılan tablodur
+     - 1.1 Örnek : Ülke, şehir, müşteri tipi
+  2. Enterprise.Lookups : Veritabanında daha çok hazır tanımların yapılmasını gerektiren verilerin tutulduğu tablodur.
+     - 2.1 Örnek : Türkiye, Almanya, İstanbul, Ankara, İzmir, Keçiören, Beşiktaş, Dolar, Euro, Havale
+     - 2.2 Veriler arasında hiyerarşi kulabilmektedir
+       - 2.2.1 Örnek : Türkiye => Kars => Akyaka gibi hiyerarşi oluşturulabilmektedir
+  3. Enterprise.ActorTypes : Veritabanında muhatap alınan her varlık bir aktör olarak kabul edilip, bu aktörlere ait tipler bu tabloda tutulmaktadır
+     - 3.1 Örnek: Personel, Bireysel Müşteri, Firma
+  4. Enterprise.Actors : Bankanın muhatap aldığı her varlık bu tabloda tutulacaktır. Veritabanının merkezi tablolarından biridir
+     - 4.1 Örnek : Can Perk, Ahmet Yıldız, Yıldırım Kırtasiye Ltd. Şti.
+  5. Account.Accounts
+  6. Account.TransferHistories
+  7. Account.Histories
+  
