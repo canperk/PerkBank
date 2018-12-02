@@ -6,8 +6,8 @@ Northwind, AdventureWorks, Pubs gibi veritabanlarına alternatif; eğitim amaçl
   1. Veritabanı içeriği başka bir veritabanının çeviri yöntemleri ile dönüştürülmüş bir versiyonu kesinlikle değildir
   2. İçerik zenginleştirilmesi için önerilere açıktır
   3. Tablo isimlerinin İngilizce olması sorgulama dilinin T-SQL İngilizce olmasından kaynaklıdır
-     - 3.1 "SELECT * FROM Kullanicilar" gibi bir sorgu kişisel fikir olarak pek yakışık olamayan bir sorgu
-     - 3.2 "SELECT * FROM  Users" gibi bir sorgu mâna kaybetmeden ve ORM tool'ları kullanırken (Entity Framework vb) kolay hareket edebilmenizi sağlayacaktır
+     - 3.1 "SELECT * FROM Kullanicilar" gibi bir sorgu kişisel fikir olarak pek hoş durmayan bir sorgu
+     - 3.2 "SELECT * FROM  Users" gibi bir sorgu anlam kaybetmeden ve ORM tool'ları kullanırken (Entity Framework vb) kolay hareket edebilmenizi sağlayacaktır
   4. .bak uzantılı haliyle beraber .sql uzantılı hali de repository içerisinde olacaktır.
   5. İçerik MS-SQL Server'a göre oluşturulmuştur. Diğer veritabanlarına göre de ilerleyen zamanlarda talebe göre düzenlenebilir
      - 5.1 Farkıl versiyonlamalar için desteklere kapımız kapalı değildir :)
@@ -24,7 +24,7 @@ Northwind, AdventureWorks, Pubs gibi veritabanlarına alternatif; eğitim amaçl
      - 3.1 Örnek: Personel, Bireysel Müşteri, Firma
   4. Enterprise.Actors : Bankanın muhatap aldığı her varlık bu tabloda tutulacaktır. Veritabanının merkezi tablolarından biridir
      - 4.1 Örnek : Can Perk, Ahmet Yıldız, Yıldırım Kırtasiye Ltd. Şti.
-  5. Account.Accounts
-  6. Account.TransferHistories
-  7. Account.Histories
+  5. Account.Accounts : Bireysel veya firma farketmeksizin banka hesaplarının tutulduğu tablodur. Kaç adet hesap türü ve döviz cinsi varsa ona göre veri içeriği zenginleştirilebilmektedir.
+  6. Account.TransferHistories : Banka içi hesapların birbirleri arasında yaptığı para transferinin geçmişini tutan tablodur.
+  7. Account.Histories : Günlük hayatta hesap hareketleri diye bildiğimiz durumun tabloya yansıtılmış hâlidir
   
